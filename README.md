@@ -46,7 +46,7 @@ Add this at the bottom: /swapfile none swap sw 0 0
 
 ### Return to source directory, and compile the daemon:
 
-    cd..
+    cd ..
     make -f makefile.unix
 
 ### Strip the file to make it smaller, then relocate it:
