@@ -36,17 +36,17 @@ Add this at the bottom: /swapfile none swap sw 0 0
     apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
 
 ### Pull the source code from github, or upload it yourself:
-    git clone https://github.com/EmbeddedDownloads/EOTCoin.git
+    git clone https://github.com/EOTCoinOrg/EOTCoin.git
 
 ### compile leveldb:
-    cd /EOTCoin/src/leveldb
+    cd EOTCoin/src/leveldb
     chmod +x build_detect_platform
     make clean
     make libleveldb.a libmemenv.a
 
 ### Return to source directory, and compile the daemon:
 
-    cd /EOTCoin/src
+    cd..
     make -f makefile.unix
 
 ### Strip the file to make it smaller, then relocate it:
@@ -60,7 +60,7 @@ Add this at the bottom: /swapfile none swap sw 0 0
 
 It will return an error, telling you to set up config file in a directory. Now we’ll set up the config file. Note that this is case sensitive.
 
-    nano ~/.EOTCOIN/EOTCOIN.conf
+    nano ~/.EOTCoin/EOTCoin.conf
 
 Add the following, save and exit:
 
